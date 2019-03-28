@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- 移动端viewport配置 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">  
+    <title>tuantuanshop-client</title>
+    <link rel="stylesheet" href="./static/css/reset.css"></link>
+    <link rel="stylesheet" href="/static/css/iconfont.css"></link>
+    <script src="/static/js/fastclick.js"></script>
+    <script>  //解决点击响应延迟0.3S的问题
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+      }, false);
+    }
+    if(!window.Promise) {
+      document.writeln('<script src="./static/js/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+    }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
